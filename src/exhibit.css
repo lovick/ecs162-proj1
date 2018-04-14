@@ -180,7 +180,50 @@ p {
 }
 
 @media only screen and (max-width: 660px) {
+    header {
+        display: flex;
+        height: 140px;
+        flex-direction: column;
+    }
 
+    header nav {
+        order: 1;
+        padding-top: 0px;
+        padding-right: 0;
+        padding: 0 60px;
+    }
+
+    header section {
+        text-align: center;
+        order: 2;
+        padding-left: 0;
+    }
+
+    header section h1 {
+        padding-top: 0;
+    }
+
+    nav ul {
+        margin-top: 15px;
+        padding-top: 0;
+        justify-content: space-between;
+    }
+
+    nav ul li {
+        padding-left: 0;
+        flex: 1;
+        text-align: center;
+        border-right: 1px solid #FFFFFF;
+    }
+
+    nav ul li:last-of-type {
+        border-right: 0px;
+    }
+
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 1000px) {

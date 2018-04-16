@@ -5,11 +5,17 @@
     font-family: "Montserrat", sans-serif;
 }
 
-body {
+html, body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
     overflow-x: hidden;
     color: #6C2E2F;
@@ -302,6 +308,11 @@ p {
     }
 }
 
-@media only screen and (max-width: 1000px) {
-    
+@media only screen and (min-width: 1000px) {
+    h1 {
+        display: block;
+    }
+    main section {
+        flex: 3;
+    }
 }

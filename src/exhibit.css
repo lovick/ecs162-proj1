@@ -73,16 +73,20 @@ main {
     flex: 1;
     width: 100vw;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-direction: row;  
     padding-top: 30px;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 main aside {
     flex: 1;
     padding-left: 20px;
-    padding-right: 10px;
+    padding-right: 15px;
+}
+
+main #hero {
+    display: none;
 }
 
 main section {
@@ -95,6 +99,7 @@ main section {
 
 main section article {
     flex: 1;
+    display: block;
     padding-right: 5px;
     padding-bottom: 22px;
 }
@@ -308,11 +313,110 @@ p {
     }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1175px) {
+    header {
+        height: 200px;
+    }
+
+    header section {
+        padding-left: 70px;
+        flex-basis: 60%;
+        flex: 3;
+    }
+
     h1 {
         display: block;
+        font-size: 70px;
     }
+
+    h2, h3, h4, h5 {
+        font-size: 35px;
+    }
+
+    article h2, article h5 {
+        display: inline-block;
+        padding: 25px 0px;
+    }
+
+    p, h6 {
+        font-size: 22px;
+    }
+
+    main aside p {
+        font-size: 18px;
+    }
+
+    footer {
+        height: 275px;
+    }
+
+    footer section {
+        line-height: 1;
+        padding: 60px 70px;
+    }
+
+    footer section:first-of-type {
+        width: 550px;
+    }
+
+    nav {
+        flex: 1;
+    }
+
+    nav ul {
+        font-size: 22px;
+    }
+
+    main {
+        flex-flow: row wrap;
+    }
+
+    main aside {
+        flex-basis: 33%;
+        flex-grow: 1;
+        padding: 50px 72px;
+    }
+
+    main #hero {
+        display: block;
+        flex-basis: 66%;
+        flex-grow: 2;
+        max-height: 100%;
+    }
+
     main section {
-        flex: 3;
+        flex-basis: 100%;
+    }
+    
+    main section article {
+        flex: 1;
+        padding-right: 8px;
+    }
+
+    main section article:last-of-type {
+        padding-right: 0px;
+    }
+    
+    main section article img {
+        width: 100%;
+    }
+
+    main #hero img {
+        width: 100%;
+    }
+
+    hr {
+        width: 40px;
+    }
+
+    main section article h2, main section article h5{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1375px) {
+    main aside p {
+        font-size: 22px;
+        line-height: 1.7;
     }
 }

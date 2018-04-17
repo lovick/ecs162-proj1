@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,700');
+
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    overflow-x: hidden;
+    color: #6C2E2F;
+}
+
+header, footer {
+    background-color: #E8AB9E;
+    color: #6C2E2F;
+}
+
+header {
+    min-width: 100%;
+    height: 129px;
+    display: flex;
+}
+
+header section {
+    padding-left: 20px;
+    flex: 2;
+}
+
+header nav {
+    flex: 1;
+    padding-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    padding-top: 45px;
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+    flex: 1;
+    padding-left: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #6C2E2F;
+}
+
+nav ul li:first-of-type a {
+    font-weight: 700;
+}
+
+main {
+    flex: 1;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;  
+    padding-top: 30px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+main aside {
+    flex: 1;
+    padding-left: 20px;
+    padding-right: 15px;
+}
+
+main #hero {
+    display: none;
+}
+
+main section {
+    flex: 2.5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+}
+
+main section article {
+    flex: 1;
+    display: block;
+    padding-right: 5px;
+    padding-bottom: 22px;
+}
+
+main section article img {
+    width: 200px;
+    padding-bottom: 3px;
+}
+
+hr {
+    width: 15px;
+    margin-left: 0;
+}
+
+footer {
+    flex: 0;
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    color: #FFFFFF;
+}
+footer section {
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+footer section:first-of-type {
+    width: 200px;
+}
+
+footer section h6 {
+    padding-bottom: 12px;
+}
+
+footer section h6:first-of-type {
+    font-weight: 700;
+    padding-bottom: 25px;
+}
+
+/* header sizes */
+
+h1 {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+    padding-top: 31px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+h3 {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 3px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+    padding-top: 3px;
+    padding-bottom: 13px;
+}
+
+h5 {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: italic;   
+}
+
+h6 {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+p {
+    padding-top: 13px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 660px) {
+    header {
+        display: flex;
+        height: 140px;
+        flex-direction: column;
+        box-shadow: 0px 0px 15px #888888;
+    }
+
+    header nav {
+        order: 1;
+        padding-top: 0px;
+        padding-right: 0;
+        padding: 0 50px;
+    }
+
+    header section {
+        text-align: center;
+        order: 2;
+        padding-left: 0;
+    }
+
+    header section h1 {
+        padding-top: 0;
+    }
+
+    aside {
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        margin-top: 25px;
+        padding-top: 0;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        font-size: 10px;
+        padding-left: 0;
+        flex: 1;
+        text-align: center;
+        border-right: 1px solid #FFFFFF;
+    }
+
+    nav ul li:last-of-type {
+        border-right: 0px;
+        padding-left: 5px;
+    }
+
+    h1 {
+        font-size: 30px;
+        text-align: center;
+        display: block;
+    }
+
+    h3 {
+        font-size: 13px;
+        padding-top: 5px;
+    }
+
+    h2 {
+        display: inline-block;
+        font-size: 15px;
+    }
+
+    aside h2 {
+        padding-right: 10px;
+        border-right: 1px solid #6C2E2F;
+    }
+
+    h4 {
+        font-size: 15px;
+        display: inline-block;
+        padding-left: 5px;
+    }
+
+    aside hr {
+        display: none;
+    }
+
+    h5 {
+        display: inline-block;
+    }
+
+
+    p {
+        padding-right: 25px;
+        padding-top: 5px;
+        margin-top: 0;
+        text-align: left;
+        line-height: 1.75;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    main section article {
+        padding: 0 25px;
+        flex-direction: column;
+        align-self: center;
+        object-fit: contain;
+        flex: 0 0 auto;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        padding-bottom: 20px;
+    }
+
+    main section article img {
+        display: block;
+        width: 85vw;
+    }
+
+    footer {
+        height: 100%;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 1175px) {
+    header {
+        height: 200px;
+    }
+
+    header section {
+        padding-left: 70px;
+        flex-basis: 60%;
+        flex: 3;
+    }
+
+    h1 {
+        display: block;
+        font-size: 70px;
+    }
+
+    h2, h3, h4, h5 {
+        font-size: 35px;
+    }
+
+    article h2, article h5 {
+        display: inline-block;
+        padding: 25px 0px;
+        padding-left: 10px;
+    }
+
+    p, h6 {
+        font-size: 22px;
+    }
+
+    main aside p {
+        font-size: 18px;
+    }
+
+    footer {
+        height: 275px;
+    }
+
+    footer section {
+        line-height: 1;
+        padding: 60px 70px;
+    }
+
+    footer section:first-of-type {
+        width: 550px;
+    }
+
+    nav {
+        flex: 1;
+    }
+
+    nav ul {
+        font-size: 22px;
+    }
+
+    main {
+        flex-flow: row wrap;
+    }
+
+    main aside {
+        flex-basis: 33%;
+        flex-grow: 1;
+        padding: 50px 72px;
+    }
+
+    main #hero {
+        display: block;
+        flex-basis: 66%;
+        flex-grow: 2;
+        max-height: 100%;
+    }
+
+    main section {
+        flex-basis: 100%;
+    }
+    
+    main section article {
+        flex: 1;
+        padding-right: 8px;
+    }
+
+    main section article:last-of-type {
+        padding-right: 0px;
+    }
+    
+    main section article img {
+        width: 100%;
+    }
+
+    main #hero img {
+        width: 100%;
+    }
+
+    hr {
+        width: 40px;
+    }
+
+    main section article h2, main section article h5{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1375px) {
+    main aside p {
+        font-size: 22px;
+        line-height: 1.7;
+    }
+}
